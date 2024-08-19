@@ -4,17 +4,23 @@ $tablet: 768px;
 $desktop: 1200px;
 
 :root {
+
+// Breakpoints
+        $mobile: 375px;
+        $tablet: 768px;
+        $desktop: 1200px;
+// Color
     --main-color: #111111;
     --secondary-color: #1E1823;
     --hover-color: #FD9222;
     --text-color: #ffffff;
 
-    /* Fonts */
+/* Fonts */
     --main-font: Montserrat;
     --main-font-size: 14px;
     --title-font-size: 24px;
     --subtitle-font-size: 18px;
 
-    // Others
+// Others
     --anima-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

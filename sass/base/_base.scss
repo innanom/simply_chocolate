@@ -13,6 +13,7 @@ body {
     height: 100%;
     font-family: var(--main-font), sans-serif;
     color: var(--main-color);
+    background-color: #ffffff;
     font-size: 14px;
 
     &.no-scroll {
@@ -32,6 +33,7 @@ img {
     height: auto;
     object-fit: cover;
 }
+
 
 .container {
     padding-left: 16px;
