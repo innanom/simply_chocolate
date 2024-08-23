@@ -16,42 +16,43 @@
 </head>
 <body>
     <!-- Header -->
-    <header id="home">
-        <p>SIMPLY CHOCOLATE</p>
-            <svg class="logo" width="24" height="24">
-                <use href="./images/icons/icon-sprite.svg#icon-logo-big" ></use>
-            </svg>
-        
-        <nav>
-            <ul>
-                <li>
-                    <a href="#home">Home</a>
+    <header class="header" id="home">
+        <div class="logo">
+            <p class="logo__text">SIMPLY CHOCOLATE</p>
+                <svg class="logo__svg">
+                    <use href="./images/icons/icon-sprite.svg#icon-logo-big" ></use>
+                </svg>
+        </div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="#home">Home</a>
                 </li>
-                <li>
-                    <a href="#howIt’sMade?">How it’s made?</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="#howIt’sMade?">How it’s made?</a>
                 </li>
-                <li>
-                    <a href="#ourProducts">Our products</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="#ourProducts">Our products</a>
                 </li>
-                <li>
-                    <a href="#topSellers">Top sellers</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="#topSellers">Top sellers</a>
                 </li>
-                <li>
-                    <a href="#>ChocolateIsLoved">Chocolate is loved</a>
+                <li class="nav__item">
+                    <a class="nav__link" href="#>ChocolateIsLoved">Chocolate is loved</a>
                 </li>
             </ul>
         </nav>
-        <ul>
-            <li>
-                <a href="https://www.instagram.com/">
+        <ul class="socialNetworks__list">
+            <li class="socialNetworks__item">
+                <a class="socialNetworks__link" href="https://www.instagram.com/">
                     <svg width="24" height="24">
                         <use href="./images/icons/icon-sprite.svg#icon-instagram-des-tab"></use>
                     </svg>
                 </a>
         
             </li>
-            <li>
-                <a href="https://x.com/">
+            <li class="socialNetworks__item">
+                <a class="socialNetworks__link" href="https://x.com/">
                     <svg width="24" height="24">
                         <use href="./images/icons/icon-sprite.svg#icon-twitter-des-tab"></use>
                     </svg>
@@ -59,10 +60,15 @@
         
             </li>
         </ul>
+        <button type="button">
+            <svg class="menu_svg" width="28" height="28">
+                <use href="./images/icons/menu-03.svg"/>
+            </svg>
+        </button>
         </header>
 
     <!-- Hero -->
-    <section>
+    <section class="hero">
         <h2>Прихований заголовок</h2>
         <p>Treat yourself or a loved one to our finest ingredients for a moment of pure delight!</p>
         <button type="button">Buy now</button>

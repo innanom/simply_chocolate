@@ -1,7 +1,12 @@
-// .logo {
-//     color: orange;
-// }
+.header {
+    @extend %container;
 
-// .logo:hover {
-//     color: red;
-// }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.menu_svg {
+    fill: white;
+}

@@ -1,0 +1,16 @@
+.logo {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.logo__text {
+    font-weight: 700;
+    line-height: 1.29%;
+    letter-spacing: -0.42px;
+}
+
+.logo__svg {
+    width: 21px;
+    height: 21px;
+}

@@ -1,5 +1,7 @@
 // utils styles
 @import './utils/variables';
+@import './utils/placeholder';
+@import './utils/visually-hidden';
 
 // base styles
 @import './base/base';
@@ -7,4 +9,7 @@
 @import './base/reset';
 
 // components styles
-@import './componets/header'
+@import './componets/header';
+@import './componets/logo';
+@import './componets/nav';
+@import './componets/socialNetworks';
