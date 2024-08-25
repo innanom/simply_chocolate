@@ -7,6 +7,13 @@
 
 }
 
-.menu_svg {
-    fill: white;
+.header__menu {
+    
+    @media screen and (min-width: $desktop) {
+        display: none;
+    }
 }
+// .menu_svg {
+//     fill: var(--main-color);
+//     color: var(--main-color);
+// }

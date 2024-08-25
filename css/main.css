@@ -55,43 +55,6 @@
   margin: -1px;
 }
 
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-body {
-  height: 100%;
-  font-family: var(--main-font), sans-serif;
-  color: var(--main-color);
-  background-color: var(--secondary-color);
-  font-size: var(--main-font-size);
-}
-body.no-scroll {
-  overflow: hidden;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 /*! modern-normalize v2.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -308,7 +271,7 @@ p {
 
 a {
   text-decoration: none;
-  color: currentColor;
+  color: var(--main-color);
 }
 
 ul {
@@ -335,6 +298,43 @@ button {
   border: 0;
 }
 
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  font-family: var(--main-font), sans-serif;
+  color: var(--main-color);
+  background-color: var(--secondary-color);
+  font-size: var(--main-font-size);
+}
+body.no-scroll {
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -347,8 +347,10 @@ button {
           justify-content: space-between;
 }
 
-.menu_svg {
-  fill: white;
+@media screen and (min-width: 1200px) {
+  .header__menu {
+    display: none;
+  }
 }
 
 .logo {
@@ -375,7 +377,34 @@ button {
 .nav {
   display: none;
 }
+@media screen and (min-width: 1200px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+
+.nav__item {
+  font-weight: 500;
+  line-height: 1.14%;
+  letter-spacing: -0.28px;
+}
 
 .socialNetworks__list {
   display: none;
+}
+@media screen and (min-width: 1200px) {
+  .socialNetworks__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }/*# sourceMappingURL=main.css.map */

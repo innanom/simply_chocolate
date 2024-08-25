@@ -4,9 +4,11 @@
 @import './utils/visually-hidden';
 
 // base styles
-@import './base/base';
 @import './base/normalize';
 @import './base/reset';
+@import './base/base';
+
+
 
 // components styles
 @import './componets/header';

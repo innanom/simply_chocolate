@@ -1,11 +1,18 @@
 .socialNetworks__list {
     display: none;
+
+
+        @media screen and (min-width: $desktop) {
+            display: flex;
+    
+        }
 }
-
-// .socialNetworks__item {
-
-// }
 
 // .socialNetworks__link {
 
+// }
+
+// .socialNetworks__svg {
+//     fill: var(--secondary-color);
+//     color: var(--main-color);
 // }

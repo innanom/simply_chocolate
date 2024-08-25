@@ -1,11 +1,20 @@
 .nav {
     display: none;
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        
+    }
 }
 
-// .nav__list {
+.nav__list {
+    display: flex;
+    gap: 24px;
 
-// }
+}
 
-// .nav__item {
-
-// }
+.nav__item {
+    font-weight: 500;
+    line-height: 1.14%;
+    letter-spacing: -0.28px;
+}
