@@ -11,7 +11,7 @@
   --anima-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header {
+.hero, .header {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -21,12 +21,12 @@
   padding-bottom: 32px;
 }
 @media screen and (min-width: 375px) {
-  .header {
+  .hero, .header {
     width: 375px;
   }
 }
 @media screen and (min-width: 768px) {
-  .header {
+  .hero, .header {
     width: 768px;
     padding-top: 32px;
     padding-left: 32px;
@@ -35,7 +35,7 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .header {
+  .hero, .header {
     width: 1200px;
     padding-top: 26px;
   }
@@ -353,6 +353,11 @@ img {
   }
 }
 
+.menu_svg {
+  fill: var(--secondary-color);
+  stroke: var(--main-color);
+}
+
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -406,5 +411,31 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 18px;
   }
+}
+
+.socialNetworks__svg {
+  fill: var(--secondary-color);
+  stroke: var(--main-color);
+}
+
+.hero {
+  background-image: url(../../images/bg-hero/bg-hero-mob-@1x.jpg);
+  width: 335px;
+  height: 621px;
+}
+
+.hero__title {
+  display: none;
+}
+
+.hero__text {
+  margin-bottom: 32px;
+  padding-top: 395px;
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.6px;
 }/*# sourceMappingURL=main.css.map */

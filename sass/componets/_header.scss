@@ -13,7 +13,7 @@
         display: none;
     }
 }
-// .menu_svg {
-//     fill: var(--main-color);
-//     color: var(--main-color);
-// }
+.menu_svg {
+    fill: var(--secondary-color);
+    stroke: var(--main-color);
+}

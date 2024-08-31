@@ -1,0 +1,25 @@
+.hero {
+    @extend %container;
+    background-image: url(../../images/bg-hero/bg-hero-mob-@1x.jpg);
+    width: 335px;
+    height: 621px;
+    
+
+}
+
+.hero__title {
+    display: none;
+}
+
+.hero__text {
+    margin-bottom: 32px;
+    padding-top: 395px;
+    // padding-right: 20px;
+    // padding-left: 20px;
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.6px;
+
+}
