@@ -418,6 +418,12 @@ img {
 .socialNetworks__svg {
   fill: var(--secondary-color);
   stroke: var(--main-color);
+  -webkit-transition: stroke var(--anima-fast);
+  transition: stroke var(--anima-fast);
+}
+.socialNetworks__svg:hover,
+.socialNetworks__svg :focus {
+  stroke: var(--accent-color);
 }
 
 .hero {

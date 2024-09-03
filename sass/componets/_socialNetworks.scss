@@ -1,7 +1,6 @@
 .socialNetworks__list {
     display: none;
 
-
         @media screen and (min-width: $desktop) {
             display: flex;
             gap: 18px;
@@ -9,11 +8,13 @@
         }
 }
 
-// .socialNetworks__link {
-
-// }
-
 .socialNetworks__svg {
     fill: var(--secondary-color);
     stroke: var(--main-color);
+    transition: stroke var(--anima-fast);
+
+    &:hover,
+    :focus {
+        stroke: var(--accent-color);
+    }
 }
