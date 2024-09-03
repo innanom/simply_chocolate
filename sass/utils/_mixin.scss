@@ -1,0 +1,17 @@
+// Кнопки
+@mixin button ($color, $font-size, $bg-color) {
+    padding: 12px 28px;
+    color: $color;
+    font-size: $font-size;
+    font-weight: 600;
+    line-height: normal;
+
+    
+    border-radius: 100px;
+    background: $bg-color;
+    
+    
+    @media screen and (min-width: $tablet) {
+        padding: 14px 40px;
+    }
+}
