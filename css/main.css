@@ -2,7 +2,7 @@
   --main-color: #111111;
   --secondary-color: #ffffff;
   --bg-color: #1E1823;
-  --hover-color: #FD9222;
+  --accent-color: #FD9222;
   /* Fonts */
   --main-font: Montserrat;
   --main-font-size: 14px;
@@ -426,10 +426,6 @@ img {
   height: 621px;
 }
 
-.hero__title {
-  display: none;
-}
-
 .hero__text {
   margin-bottom: 32px;
   padding-top: 395px;
@@ -438,4 +434,77 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.6px;
+}
+
+.hero__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+.hero__btn-buy {
+  padding: 12px 28px;
+  color: var(--secondary-color);
+  font-size: var(--main-font-size);
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 100px;
+  background: var(--accent-color);
+  -webkit-transition: background-color var(--anima-fast);
+  transition: background-color var(--anima-fast);
+}
+@media screen and (min-width: 768px) {
+  .hero__btn-buy {
+    padding: 14px 40px;
+  }
+}
+.hero__btn-buy:hover,
+.hero__btn-buy :focus {
+  background: #FCF1E0;
+  color: var(--accept-color);
+}
+
+.hero__btn-how {
+  padding: 12px 28px;
+  color: var(--secondary-color);
+  font-size: var(--main-font-size);
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 100px;
+  background: none;
+  border: 1px solid #FFF;
+}
+@media screen and (min-width: 768px) {
+  .hero__btn-how {
+    padding: 14px 40px;
+  }
+}
+.hero__btn-how:hover,
+.hero__btn-how :focus {
+  background: var(--secondary-color);
+  color: var(--accept-color);
+  border: 1px solid #FD9222;
+}
+
+.hero__btn-scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--secondary-color);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: -0.36px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.hero__scroll {
+  border-radius: 50%;
+  background-color: var(--secondary-color);
 }/*# sourceMappingURL=main.css.map */
