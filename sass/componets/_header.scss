@@ -1,10 +1,15 @@
 .header {
     @extend %container;
 
+    padding-top: 20px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+    @media screen and (min-width: $tablet) {
+            padding-top: 24px;
+    }
 }
 
 .header__menu {
