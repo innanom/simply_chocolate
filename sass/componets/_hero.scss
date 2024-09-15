@@ -119,7 +119,7 @@
 
 .hero__btn-buy {
     @include button (var(--secondary-color), var(--main-font-size), var(--accent-color));
-    transition: background-color var(--anima-fast);
+    transition: background-color var(--anima-fast), color var(--anima-fast);
 
     &:hover,
     :focus {
@@ -131,6 +131,7 @@
 .hero__btn-how {
     @include button (var(--secondary-color), var(--main-font-size), none);
     border: 1px solid #FFF;
+    transition: background var(--anima-fast), color var(--anima-fast), border var(--anima-fast);
 
     &:hover,
     :focus {
@@ -153,6 +154,13 @@
     color: var(--secondary-color);
     background-color: rgba(0, 0, 0, 0);
 
+    transition: color var(--anima-fast);
+
+    &:hover,
+    :focus {
+        color: var(--accent-color);
+    }
+
     @media screen and (min-width: $tablet) {
         font-size: var(--main-font-size);
         line-height: 1.29;
@@ -161,7 +169,27 @@
 
 }
 
-.hero__scroll{
+// .hero__scroll{
+//     border-radius: 50%;
+//     background-color: var(--secondary-color);
+
+//     transition: background-color var(--anima-fast);
+    
+//         &:hover,
+//         :focus {
+//             background-color: var(--accent-color);
+//         }
+// }
+
+.scroll__svg {
     border-radius: 50%;
     background-color: var(--secondary-color);
+    transition: background-color var(--anima-fast), fill var(--anima-fast), ;
+    
+        &:hover,
+        :focus {
+            background-color: var(--accent-color);
+            fill: var(--secondary-color);
+            
+}
 }

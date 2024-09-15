@@ -550,8 +550,8 @@ img {
   line-height: normal;
   border-radius: 100px;
   background: var(--accent-color);
-  -webkit-transition: background-color var(--anima-fast);
-  transition: background-color var(--anima-fast);
+  -webkit-transition: background-color var(--anima-fast), color var(--anima-fast);
+  transition: background-color var(--anima-fast), color var(--anima-fast);
 }
 @media screen and (min-width: 768px) {
   .hero__btn-buy {
@@ -573,6 +573,8 @@ img {
   border-radius: 100px;
   background: none;
   border: 1px solid #FFF;
+  -webkit-transition: background var(--anima-fast), color var(--anima-fast), border var(--anima-fast);
+  transition: background var(--anima-fast), color var(--anima-fast), border var(--anima-fast);
 }
 @media screen and (min-width: 768px) {
   .hero__btn-how {
@@ -600,6 +602,12 @@ img {
   letter-spacing: -0.36px;
   color: var(--secondary-color);
   background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: color var(--anima-fast);
+  transition: color var(--anima-fast);
+}
+.hero__btn-scroll:hover,
+.hero__btn-scroll :focus {
+  color: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
   .hero__btn-scroll {
@@ -609,7 +617,14 @@ img {
   }
 }
 
-.hero__scroll {
+.scroll__svg {
   border-radius: 50%;
   background-color: var(--secondary-color);
+  -webkit-transition: background-color var(--anima-fast), fill var(--anima-fast);
+  transition: background-color var(--anima-fast), fill var(--anima-fast);
+}
+.scroll__svg:hover,
+.scroll__svg :focus {
+  background-color: var(--accent-color);
+  fill: var(--secondary-color);
 }/*# sourceMappingURL=main.css.map */
