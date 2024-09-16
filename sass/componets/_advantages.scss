@@ -1,0 +1,38 @@
+.advantages {
+    @extend %container;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--bg-color);
+}
+
+.advantages__list {
+
+}
+
+.advantages__item {
+
+}
+
+.advantages__svg {
+    width: 32px;
+    height: 32px;
+    border-radius: 365px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+}
+
+.advantages__title {
+    margin-bottom: 18px;
+    color: var(--secondary-color);
+    
+    font-size: var(--subtitle-font-size);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.advantages__text {
+    color: rgba(255, 255, 255, 0.70);
+    font-family: Montserrat;
+    line-height: normal;
+    letter-spacing: -0.28px;
+}
