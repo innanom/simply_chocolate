@@ -648,23 +648,16 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .advantages__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    grid-template-columns: repeat(3, 1fr);
     gap: 70px;
     padding-left: 30px;
     padding-right: 30px;
   }
 }
 
-.advantages__item {
-  width: 308px;
-}
-
 @media screen and (min-width: 1200px) {
   .advantages__item:not(:last-child):after {
     content: "";
-    height: 124px;
     border-right: 1px solid rgba(255, 255, 255, 0.5);
   }
 }
@@ -689,6 +682,7 @@ img {
 
 .advantages__text {
   margin-bottom: 20px;
+  padding-right: 18px;
   color: rgba(255, 255, 255, 0.7);
   font-family: Montserrat;
   line-height: normal;
