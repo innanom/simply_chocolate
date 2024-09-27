@@ -27,22 +27,15 @@
 }
 
 // .advantages__item {
-//     width: 308px;
+//     height: 243px;
+// }
     
     
-
-
-// }
-// .advantages__card {
-//     display: flex;
-// }
-.advantages__item:not(:last-child):after {
+.advantages__item:not(:last-child) {
         @media screen and (min-width: $desktop) {
-                content: '';
-                // display: flex;
-                // height: 124px;
-                // margin-left: 18px;
                 border-right: 1px solid rgba(255, 255, 255, 0.50);
+                height: 124px;
+                
             }
 }
 // .advantages__item:not(:last-child) {

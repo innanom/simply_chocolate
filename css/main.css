@@ -656,9 +656,9 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .advantages__item:not(:last-child):after {
-    content: "";
+  .advantages__item:not(:last-child) {
     border-right: 1px solid rgba(255, 255, 255, 0.5);
+    height: 124px;
   }
 }
 
