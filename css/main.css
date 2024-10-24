@@ -655,11 +655,8 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .advantages__card {
-    border-right: 1px solid rgba(255, 255, 255, 0.5);
-    height: 124px;
-  }
+.advantages__item {
+  margin-bottom: 20px;
 }
 
 .advantages__svg {
