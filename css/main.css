@@ -795,8 +795,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .unique-components__item {
-    width: 206px;
-    height: 214px;
+    width: 270px;
+    height: 270px;
   }
 }
 
