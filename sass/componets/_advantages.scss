@@ -1,5 +1,4 @@
 .advantages {
-    @extend %container;
     background-color: var(--bg-color);
     padding-top: 20px;
     padding-bottom: 20px;
@@ -8,6 +7,9 @@
         padding-top: 50px;
         padding-bottom: 50px;
     }
+}
+.advantages .container{
+    @extend %container;
 }
 
 .advantages__list {
@@ -24,7 +26,6 @@
         gap: 70px;
         
     }
-
 }
 
 .advantages__item {
